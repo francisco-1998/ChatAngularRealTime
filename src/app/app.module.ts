@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 
 //Socket
 import {SocketIoModule,SocketIoConfig} from 'ngx-socket-io';
-import { environment } from '../environments/environment.prod';
 
-const config: SocketIoConfig = { url: environment.socketURL, options: {} };
+
+const config: SocketIoConfig = { url: 'http://localhost:5000', options: {} };
 
 @NgModule({
   declarations: [
