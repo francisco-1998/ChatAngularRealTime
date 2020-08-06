@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 
 //Socket
 import {SocketIoModule,SocketIoConfig} from 'ngx-socket-io';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 const config: SocketIoConfig = { url: 'http://localhost:5000', options: {} };
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,5 @@
 import { Socket } from 'ngx-socket-io';
 import { Injectable } from '@angular/core';
-import {ThrowStmt} from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root',
