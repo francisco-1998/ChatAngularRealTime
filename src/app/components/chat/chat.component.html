@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <div class="main">
+    <div class="px-2 scroll">
+      <!-- <div class="d-flex align-items-center">
+        <div class="text-left pr-1"><img src="https://img.icons8.com/color/40/000000/guest-female.png" width="30" class="img1" /></div>
+        <div class="pr-2 pl-1"> <span class="name">Sarah Anderson</span>
+            <p class="msg">Hi Dr. Hendrikson, I haven't been falling well for past few days.</p>
+        </div>
+      </div> -->
+
+    <div class="d-flex align-items-center text-right justify-content-end" id="burbuja" *ngFor="let item of mensajes">
+      <div class="pr-2"> <span class="name">{{ item.de }}</span>
+        <p class="msg">{{ item.cuerpo }}</p>
+      </div>
+    </div>
+    </div>
+    <nav class="navbar bg-white navbar-expand-sm d-flex justify-content-between">
+      <form (ngSubmit)="enviar()">
+        <input type="text number" name="texto" [(ngModel)]="texto" autofocus autocomplete="false" class="form-control"
+          placeholder="Type a message...">
+
+      </form>
+      <div class="icondiv d-flex justify-content-end align-content-center text-center ml-2"> <i
+          class="fa fa-paperclip icon1"></i> <i class="fa fa-arrow-circle-right icon2"></i> </div>
+    </nav>
+  </div>
+</div>

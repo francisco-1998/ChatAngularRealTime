@@ -6,18 +6,23 @@ import { AppComponent } from './app.component';
 //Socket
 import {SocketIoModule,SocketIoConfig} from 'ngx-socket-io';
 import { FooterComponent } from './components/footer/footer.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms';
 
 
-const config: SocketIoConfig = { url: 'http://localhost:5000', options: {} };
+const config: SocketIoConfig = { url: environment.socketURL, options: {} };
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
+    FooterComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
-    SocketIoModule.forRoot(config)
+    SocketIoModule.forRoot(config),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

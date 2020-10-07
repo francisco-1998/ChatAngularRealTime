@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { WebsocketService } from '../../services/websocket.service';
 
 @Component({
@@ -6,11 +6,8 @@ import { WebsocketService } from '../../services/websocket.service';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
 
   constructor(public wbsocketservice:WebsocketService) { }
-
-  ngOnInit(): void {
-  }
 
 }

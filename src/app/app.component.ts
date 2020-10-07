@@ -6,11 +6,7 @@ import { WebsocketService } from './services/websocket.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  title : "Hola mundo"
-  constructor(public wbsocket: WebsocketService) {}
-
-  ngOnInit() {
-
-  }
+export class AppComponent{
+  title: "Hola mundo"
+  constructor(public wsService: WebsocketService) {}
 }
