@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ListaUsuariosComponent } from './components/lista-usuarios/lista-usuarios.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MensajesComponent } from './pages/mensajes/mensajes.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 const config: SocketIoConfig = { url: environment.socketURL, options: {} };
@@ -28,6 +29,8 @@ const config: SocketIoConfig = { url: environment.socketURL, options: {} };
   imports: [
     BrowserModule,
     SocketIoModule.forRoot(config),
+    FormsModule,
+    AppRoutingModule,
     FormsModule
   ],
   providers: [],

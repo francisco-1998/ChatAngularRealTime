@@ -1,1 +1,16 @@
-<p>login works!</p>
+<div class="text-center">
+  <form class="form-signin" (ngSubmit)="ingresar()">
+    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+
+    <h1 class="h3 mb-3 font-weight-normal">RED FRANCISCO</h1>
+
+    <label for="inputEmail" class="sr-only">Nombre de usuario</label>
+
+    <input type="text" name="username" [(ngModel)]="username" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+    <button class=" mt-5 btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+
+  </form>
+</div>
